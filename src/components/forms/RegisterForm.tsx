@@ -4,6 +4,8 @@ import styles from "./index.module.scss";
 
 export const RegisterForm = () => {
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        console.log("register button pressed");
+        
         event.preventDefault();
     };
 
@@ -20,12 +22,12 @@ export const RegisterForm = () => {
 
             <section className={styles.halfFieldRow}>
                 <InputContainer> 
-                    <InputLabel htmlFor="birthday">Birthday</InputLabel> 
-                    <InputField type="text" id="birthday"/>
+                    <InputLabel htmlFor="firstName">First name</InputLabel> 
+                    <InputField type="text" id="firstName"/>
                 </InputContainer>
                 <InputContainer> 
-                    <InputLabel htmlFor="country">Country</InputLabel> 
-                    <InputField type="text" id="country"/>
+                    <InputLabel htmlFor="lastName">Last name</InputLabel> 
+                    <InputField type="text" id="lastName"/>
                 </InputContainer>
             </section>
 

@@ -1,11 +1,18 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { InputContainer, InputField, InputLabel, Button } from "../../utils/styles";
 import styles from "./index.module.scss";
 
 export const LoginForm = () => {
 
+    const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        console.log("login button pressed");
+        
+        event.preventDefault()
+    }
+
     return (
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={onSubmit}>
             <InputContainer> 
                 <InputLabel htmlFor="username">Username</InputLabel> 
                 <InputField type="text" id="username"/>

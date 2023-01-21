@@ -1,8 +1,8 @@
 export type UserRegisterParams = {
     username: string;
     password: string;
-    country: string;
-    birthday: string;
+    firstname: string;
+    lastname: string;
 }
 
 export type UserLoginParams = {
