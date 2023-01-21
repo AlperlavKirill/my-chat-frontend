@@ -13,6 +13,12 @@ code {
 }
 
 body,
+html,
+#root {
+  height: 100%;
+}
+
+body,
 html {
   background-color: #232931;
   color: #fff

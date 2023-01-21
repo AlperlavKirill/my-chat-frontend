@@ -1,10 +1,11 @@
 import { RegisterForm } from "../components/forms/RegisterForm"
+import { Page } from "../utils/styles";
 
 export const RegistrationPage = () => {
 
     return (
-        <div>
+        <Page>
             <RegisterForm />
-        </div>
+        </Page>
     );
 }

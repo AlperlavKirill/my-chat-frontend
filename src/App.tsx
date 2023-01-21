@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router';
 import { Routes } from 'react-router-dom';
+import { LoginPage } from './pages/LoginPage';
 import { RegistrationPage } from './pages/RegistrationPage';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<div>Welcome to the first page</div>}></Route>
-        <Route path="/r" element={<RegistrationPage />}></Route>  
+        <Route path="/login" element={<LoginPage />}></Route>
+        <Route path="/register" element={<RegistrationPage />}></Route>  
       </Routes>
     </>
   )
