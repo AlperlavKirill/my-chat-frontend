@@ -11,14 +11,16 @@ import styles from "./index.module.scss";
 import { postUserRegister } from "../../utils/api/api";
 
 export const RegisterForm = () => {
-  const { register, handleSubmit } = useForm<UserRegisterParams>();
+  const { register, handleSubmit , formState: { errors }} = useForm<UserRegisterParams>();
+
+  console.log(errors);
 
   const onSubmit = async (data: UserRegisterParams) => {
     console.log(data);
 
     try {
       postUserRegister(data);
-      navigate('/')
+      // navigate('/')
     } catch (exeption) {
       console.log(exeption);
     }
