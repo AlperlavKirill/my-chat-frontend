@@ -1,23 +1,23 @@
 form {
-    width: 800px;
+  width: 800px;
 }
 
 .button {
-    margin: 7px 0;
+  margin: 7px 0;
 }
 
 .halfFieldRow {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 8px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .footerText {
-    & :last-child {
-        color: #fff;
-        margin: 0px 4px;
-    }
-    
-    text-align: center;
+  & :last-child {
+    color: #fff;
+    margin: 0px 4px;
+  }
+
+  text-align: center;
 }
