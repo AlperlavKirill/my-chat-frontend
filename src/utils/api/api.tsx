@@ -13,9 +13,9 @@ const axiosConfig = {
 };
 
 export const postUserRegister = (params: UserRegisterParams) => {
-  axiosClient.post(`${SERVER_URL}/register`, { params }, axiosConfig);
+  axiosClient.post(`${SERVER_URL}/register`, params, axiosConfig);
 };
 
 export const postUserLogin = (params: UserLoginParams) => {
-  axiosClient.post(`${SERVER_URL}/login`, { params }, axiosConfig);
+  axiosClient.post(`${SERVER_URL}/login`, params, axiosConfig);
 };
